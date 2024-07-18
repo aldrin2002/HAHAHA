@@ -1,0 +1,164 @@
+.bg-img {
+  background-image: url("/assets/GC.jpg");
+  background-size: cover; /* Ensures the entire container is covered */
+  background-position: center; /* Centers the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Sets the container height to 100vh (viewport height) */
+  width: 100vw; /* Sets the container width to 100vw (viewport width) */
+  position: absolute; /* Positions the container on top of other elements */
+  top: 0; /* Sets the top position to 0 */
+  left: 0; /* Sets the left position to 0 */
+  z-index: -1; /* Ensures the background image is behind other elements */
+}
+
+/* Minimalist Colors */
+body {
+  background-color: #f5f5f5; /* Light gray background */
+  font-family: sans-serif; /* Default sans-serif font */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-content {
+  padding: 40px;
+  border-radius: 10px; /* Slight rounded corners */
+  background-color: #e0d4d4; /* White background for the form */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Optional: Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Fonts */
+.login-form label,
+.form-check-label,
+.btn,
+.footer p {
+  font-size: 16px; /* Consistent font size */
+  font-family:  Tahoma;
+  align-items: center;
+  margin: 10px;
+}
+
+.login-title h1 {
+  margin: 20px; /* Remove default margin */
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia;
+  font-weight: 100px;
+  font-style: bold;
+  display: flex;
+
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between form elements */
+}
+
+/* Form Elements */
+.form-group {
+  display: flex; /* Align labels and inputs horizontally */
+  align-items: center;
+  justify-content: space-between; /* Use flexbox to space elements */
+}
+
+.form-control {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between checkbox and label */
+}
+
+.form-check-label {
+  font-size: 15px; /* Slightly smaller label text */
+}
+
+.float-right {
+  margin-left: auto; /* Align "Forgot password?" to the right */
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Add subtle hover effect */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue primary button */
+  color: #fff; /* White text for primary button */
+}
+
+.btn-primary:hover {
+  background-color: #0067cc; /* Darker blue on hover */
+}
+
+.btn-link {
+  color: #007bff; /* Blue text for link button */
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline; /* Underline on hover for link button */
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f5f5f5; /* Light gray footer background */
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media-icon {
+  margin: 0 5px;
+  color: #ccc; /* Light gray color for social icons */
+  font-size: 20px;
+  transition: all 0.2s ease-in-out; /* Add hover effect on social icons */
+}
+
+.social-media-icon:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .login-content {
+    padding: 20px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/* Adjustments for even smaller screens, like phones */
+@media (max-width: 576px) {
+  .login-content {
+    padding: 15px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
